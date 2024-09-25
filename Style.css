@@ -458,6 +458,218 @@ footer .copywright{
     text-align: center;
 }
 
+/* Shop Page */
+#shop-header{
+    background-image: url("/images/shop-header.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#shop-header h2,
+#shop-header p
+{
+    
+    color: #fff;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+   text-decoration: none;
+   background-color: #088178;
+   padding: 15px 20px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: 600;
+}
+
+/*Single product page*/
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .spro-img{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.small-img-col{
+    width: 24%;
+    cursor: pointer;
+}
+#prodetails .spro-det{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .spro-det button{
+    background-color: #088178;
+    color: #fff;
+   
+}
+#prodetails .spro-det h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .spro-det h2{
+    font-size: 26px;
+}
+#prodetails .spro-det select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom:10px;
+
+}
+#prodetails .spro-det input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .spro-det input:focus{
+    outline: none;
+}
+#prodetails .spro-det span{
+    line-height: 25px;
+}
+/* About page */
+
+#shop-header .about-header{
+  background-image: url("/images/aboutbanner.png");  
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head img{
+    width:50%;
+    height: auto;
+}
+#about-head div{
+   padding-left: 40px;
+}
+#about-app{
+    text-align: center;
+}
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Contact Page */
+
+#contact-details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#form-details form span{
+   font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact-details .details h3{
+    font-size: 16px;
+   padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+   
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details li p{
+    font-size: 14px;
+    margin:0;
+}
+#contact-details .map{
+    width:55%;
+    height:400px;
+}
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+
+}
+ #form-details form{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ #form-details form input,
+ #form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+ }
+ #form-details form button{
+    background-color: #088178;
+    color: #fff;
+    
+ }
+ #form-details .people div{
+     padding-bottom: 25px;
+     display: flex;
+     align-items: flex-start;
+ }
+ #form-details .people div img{
+    width:65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+ }
+ #form-details .people div p{
+    font-size: 13px;
+    margin: 0;
+    line-height: 25px;
+ }
+ #form-details .people div p span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+ }
+
 
 @media (max-width:799px) {
     .section-p1{
@@ -538,6 +750,14 @@ footer .copywright{
     #newsletter .form{
         width: 70%;
     }
+
+    /* contact page */
+    #form-details{
+        padding: 40px;
+    }
+    #form-details form{
+        width: 50%;
+    }
 }
 @media (max-width: 477px) {
     .section-p1{
@@ -584,6 +804,56 @@ footer .copywright{
     footer .copywright{
         text-align: start;
     }
+    /* Single prod  */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .spro-img{
+        width: 100%;
+        margin-right: 0;
+    }
+    #prodetails .spro-det{
+        width: 100%;
+        
+    }
+
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0;
+    }
+    #about-app .video{
+        width: 100%;
+    }
+
+    /* contact page */
+    #contact-details{
+        flex-direction: column;
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #contact-details .map{
+        width: 100%;
+       
+    }
+    #form-details{
+       margin: 10px;
+         padding: 30px 10px;
+         flex-wrap: wrap;
+    }
+    #form-details form{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     
 }
   
